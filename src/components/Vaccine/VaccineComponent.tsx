@@ -19,7 +19,7 @@ const VaccineComponent = () => {
 
     const handleDepartment = (department: number) => {
         if(department >= 10 && department <= 95) {
-            axios.get(`https://vitemadose.gitlab.io/vitemadose/${department}.json`)
+            axios.get(process.env.REACT_APP_VACCINE + `/${department}.json`)
                 .then(res => {
                     setData(res.data.centres_disponibles);
                     setDataLabel(true);
@@ -58,8 +58,6 @@ const VaccineComponent = () => {
                    )}
                     
                 </tbody>
-                
-                
             </table>
         </section>
     );

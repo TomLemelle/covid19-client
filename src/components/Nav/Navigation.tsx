@@ -18,7 +18,7 @@ const Navigation = () => {
                         Vaccine
                     </NavLink>
 
-                    <NavLink exact to="/tracks" className="nav-link" activeClassName="nav-active">
+                    <NavLink exact to="/track" className="nav-link" activeClassName="nav-active">
                         Track
                     </NavLink>
                 
