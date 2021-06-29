@@ -1,0 +1,24 @@
+.attestation-component {
+
+    max-width: 80%;
+    margin: 50px auto;
+
+    h3 {
+        margin-bottom: 10px;
+        font-size: 2em;
+        color: $heroBannerBg;
+    }
+
+    a {
+        display: inline-block;
+        padding: 5px 50px;
+        border: 1px solid #f80000;
+        color: #f80000;
+        transition: transform 250ms ease-in-out;
+
+        &:hover {
+            transform: translateX(10px);
+        }
+    }
+}
+
