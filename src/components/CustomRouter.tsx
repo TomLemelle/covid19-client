@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Home from '../pages/Home';
 import Vaccine from '../pages/Vaccine';
 import Track from '../pages/Track';
+import Attestation from '../pages/Attestation';
 
 const CustomRouter = () => {
     return (
@@ -12,7 +13,7 @@ const CustomRouter = () => {
                     <Route path="/" exact component={Home} />
                     <Route path="/vaccine" exact component={Vaccine} />
                     <Route path="/track" exact component={Track} />
-                    <Route path="/attestation" exact component={Home} />
+                    <Route path="/attestation" exact component={Attestation} />
                     <Redirect to="/" />
                 </Switch>
             </Router>

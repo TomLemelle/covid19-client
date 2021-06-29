@@ -4,10 +4,10 @@ import VaccineComponent from '../components/Vaccine/VaccineComponent';
 
 const Vaccine = () => {
     return (
-        <div>
+        <>
             <Navigation />
             <VaccineComponent />
-        </div>
+        </>
     );
 };
 

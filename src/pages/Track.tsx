@@ -4,10 +4,10 @@ import TrackComponent from '../components/Track/TrackComponent';
 
 const Track = () => {
     return (
-        <div>
+        <>
             <Navigation />
             <TrackComponent />
-        </div>
+        </>
     );
 };
 

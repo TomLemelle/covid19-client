@@ -53,7 +53,7 @@ const VaccineComponent = () => {
                        <td>{item.nom}</td>
                        <td>{item.metadata.address}</td>
                        <td>{item.departement}</td>
-                       <td><a href={item.url}>Visit</a></td>
+                       <td><a href={item.url} target="_blank" rel="noreferrer">Visit</a></td>
                     </tr>
                    )}
                     
