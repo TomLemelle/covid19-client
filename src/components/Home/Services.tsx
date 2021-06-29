@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import vaccine from '../assets/vaccine.png';
-import track from '../assets/track.png';
-import attestation from '../assets/attestation.png';
+import vaccine from '../../assets/vaccine.png';
+import track from '../../assets/track.png';
+import attestation from '../../assets/attestation.png';
 
 
 interface ServicesInterface {

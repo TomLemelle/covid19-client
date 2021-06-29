@@ -1,5 +1,5 @@
 import React from 'react';
-import covidLogoHeroBanner from '../assets/covidLogoHeroBanner.png';
+import covidLogoHeroBanner from '../../assets/covidLogoHeroBanner.png';
 
 
 const HeroBanner = () => {
