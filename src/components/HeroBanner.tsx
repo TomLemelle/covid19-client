@@ -13,7 +13,7 @@ const HeroBanner = () => {
                         excepturi sint incidunt totam necessitatibus labore deserunt aspernatur et porro iusto 
                         sapiente error quos consequatur vero rerum, quibusdam deleniti?
                     </p>
-                    <div className="covidtracker"><a href="https://vitemadose.covidtracker.fr/">Explore CovidTracker</a></div>
+                    <div className="covidtracker"><a href="https://vitemadose.covidtracker.fr/" target="_blank" rel="noreferrer">Explore CovidTracker</a></div>
                 </li>
                 <li>
                     <img src={covidLogoHeroBanner} alt="logo du covid19" />
