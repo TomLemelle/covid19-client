@@ -1,0 +1,53 @@
+.herobanner {
+    width: 100%;
+    background-color: $heroBannerBg;
+    padding: 0 10%;
+
+    .list-herobanner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+        @media (max-width: 1000px) {
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p, h1 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1B706D;
+            font-size: 3em;
+            font-weight: bold;
+
+            span { color: white; }
+        }
+
+        p {
+            margin: 25px 0;
+            font-size: 1.7em;
+            color: white;
+        }
+        .covidtracker {
+            display: flex;
+            justify-content: center;
+        }
+        a {
+            font-size: 1.7em;
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: white;
+            color: $heroBannerBg;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

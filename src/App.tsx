@@ -1,9 +1,11 @@
 import React from 'react';
+import CustomRouter from './components/CustomRouter';
+import "./styles/main.scss";
 
 function App() {
   return (
     <div className="App">
-      <div>Typescript</div>
+      <CustomRouter />
     </div>
   );
 }
