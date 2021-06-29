@@ -11,7 +11,7 @@ const HeroBanner = () => {
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, repudiandae eaque 
                         excepturi sint incidunt totam necessitatibus labore deserunt aspernatur et porro iusto 
-                        sapiente error quos consequatur vero rerum, quibusdam deleniti?
+                        sapiente error quos consequatur vero rerum, quibusdam deleniti labore?
                     </p>
                     <div className="covidtracker"><a href="https://vitemadose.covidtracker.fr/" target="_blank" rel="noreferrer">Explore CovidTracker</a></div>
                 </li>
