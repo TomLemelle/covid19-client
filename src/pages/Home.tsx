@@ -5,11 +5,11 @@ import Services from '../components/Home/Services';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navigation />
             <HeroBanner />
             <Services />
-        </div>
+        </>
     );
 };
 
