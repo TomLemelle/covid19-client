@@ -31,26 +31,31 @@
         }
     }
 
-    table {
-        margin-top: 30px;
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
+    .table {
+        overflow:hidden;
+        overflow-x: scroll;
+        height: auto;
+
+        table {
+            margin-top: 30px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+        
+            td > a {
+                color: black;
+            }
+              
+            tr:nth-child(even) {
+            background-color: #dddddd;
+            }
         }
-    
-        td > a {
-            color: black;
-        }
-          
-        tr:nth-child(even) {
-        background-color: #dddddd;
-        }
-    }
-          
+    }        
 }
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-import { useEffect } from 'react';
 
 const TrackComponent = () => {
 
@@ -30,35 +29,35 @@ const TrackComponent = () => {
             <p>{dataLabel ? 'Here is the country data:' : 'Please choose a country code'}</p>
             <input type="text" className="track-input" onChange={(e) => fetchData(e.target.value)} />
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Country code</th>
-                        <th>Location</th>
-                        <th>Confirmed case</th>
-                        <th>Dead</th>
-                        <th>Recovered</th>
-                        <th>Updated at</th>
-                    </tr>
-                </thead>
+            <div className="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Country code</th>
+                            <th>Location</th>
+                            <th>Confirmed case</th>
+                            <th>Dead</th>
+                            <th>Recovered</th>
+                            <th>Updated at</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                   
-                   {country.map((item: countryInterface) =>
-                    <tr key={item.country_code}>
-                       <td>{item.country_code}</td>
-                       <td>{item.location}</td>
-                       <td>{item.confirmed}</td>
-                       <td>{item.dead}</td>
-                       <td>{item.recovered}</td>
-                       <td>{new Date(item.updated).toLocaleString()}</td>
-                    </tr>
-                   )}
+                    <tbody>
                     
-                </tbody>
-                
-                
-            </table>
+                    {country.map((item: countryInterface) =>
+                        <tr key={item.country_code}>
+                        <td>{item.country_code}</td>
+                        <td>{item.location}</td>
+                        <td>{item.confirmed}</td>
+                        <td>{item.dead}</td>
+                        <td>{item.recovered}</td>
+                        <td>{new Date(item.updated).toLocaleString()}</td>
+                        </tr>
+                    )}
+                        
+                    </tbody>
+                </table>
+            </div>
         </section>
     );
 };

@@ -36,29 +36,31 @@ const VaccineComponent = () => {
             <p>{dataLabel ? 'Here is the list:' : 'Please choose a number between 10 & 95'}</p>
             <input type="text" placeholder="Your department" className="department-input" onChange={(e) => handleDepartment(+e.target.value)}/>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Department</th>
-                        <th>Url</th>
-                    </tr>
-                </thead>
+            <div className="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Department</th>
+                            <th>Url</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                   
-                   {data.map((item: apiInterface) =>
-                    <tr key={item.gid}>
-                       <td>{item.nom}</td>
-                       <td>{item.metadata.address}</td>
-                       <td>{item.departement}</td>
-                       <td><a href={item.url} target="_blank" rel="noreferrer">Visit</a></td>
-                    </tr>
-                   )}
+                    <tbody>
                     
-                </tbody>
-            </table>
+                    {data.map((item: apiInterface) =>
+                        <tr key={item.gid}>
+                        <td>{item.nom}</td>
+                        <td>{item.metadata.address}</td>
+                        <td>{item.departement}</td>
+                        <td><a href={item.url} target="_blank" rel="noreferrer">Visit</a></td>
+                        </tr>
+                    )}
+                        
+                    </tbody>
+                </table>
+            </div>
         </section>
     );
 };
